@@ -1,3 +1,1 @@
-message = "Bonjour, monde !"
-
-puts message
+puts "Bonjour, monde !"

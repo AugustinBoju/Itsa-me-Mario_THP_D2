@@ -1,10 +1,9 @@
-number = 0
-tab = ["jean.dupont.#{number}@email.fr"]
-while number < 50 do
-  number = number + 1
-  if number%2 != 0
-    number = number + 1
+number = 1
+tab = [""]
+while (number <= 50)
+  tab << "jean.dupont.#{"%02d"%number}@email.fr"
+  if (number.to_i.even?)
+    puts tab[number]
   end
-  tab << "jean.dupont.#{number}@email.fr"
+  number += 1
 end
-puts "#{tab}"
